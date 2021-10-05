@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);  
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 16px;
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow:3px 3px 3px hsl(223, 47%, 23%, 0.2);
+    max-width: 450px;
+}
+.hero{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+h1{
+    color: var(--dark-blue);
+    margin: 10px 0;
+}
+h3{
+    color: var(--dark-blue);
+}
+p{
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+    padding: 0 20px;
+}
+.micon{
+    padding-right: 30px;
+}
+.plan{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+ .price{
+     display: flex;
+     text-align: center;
+ }
+
+button{
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: hsl(245, 75%, 52%);
+
+}
+button:hover{
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 90%;
+    padding:0 5%;
+}
+.change{
+    background-color: transparent;
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.change:hover{
+    text-decoration: none;
+    color: var(--desaturated-blue);
+}
+
+.proceed{
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    box-shadow: 3px 3px 3px hsl(223, 47%, 23%, 0.2);
+}
+
+.proceed:hover{
+    background-color: var(--desaturated-blue);
+}
+
+.cancel{
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+.cancel:hover{
+    color: var(--dark-blue);
+}
+:hover{
+    transition: ease-in-out 0.2s;
+}
+
+@media (min-width:768px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .container{
+        max-width: 500px;
+    }
+}
+
+/* Attributions */
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
